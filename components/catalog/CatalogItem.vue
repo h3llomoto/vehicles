@@ -46,7 +46,7 @@
 .item-info__description {
   font-weight: 300;
   font-size: 12px;
-  line-height: 148%;
+  line-height: 150%;
   color: #677B8F;
   margin-bottom: 16px;
 }
@@ -65,7 +65,7 @@
 .night .item-info__description {
   color: #99A7B5;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .item {
     padding: 20px;
   }

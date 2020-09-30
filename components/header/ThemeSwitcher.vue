@@ -39,7 +39,7 @@
 .night .night-mode span {
   color: #99A7B5;
 }
-@media (max-width: 375px) {
+@media (max-width: 1200px) {
   .night-mode,
   .night .night-mode {
     margin-right: 16px;

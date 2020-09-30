@@ -53,15 +53,7 @@
 .night .slogan {
   color: #99A7B5;
 }
-@media (max-width: 375px) {
-  .header {
-    padding: 0 16px;
-    margin-bottom: 8px;
-    height: 56px;
-  }
-  .slogan {
-    display: none;
-  }
+@media (max-width: 1200px) {
   .messages {
     margin-right: 16px;
   }
@@ -71,6 +63,17 @@
   .icon svg {
     width: 20px;
     height: 20px;
+  }
+
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 0 16px;
+    margin-bottom: 8px;
+    height: 56px;
+  }
+  .slogan {
+    display: none;
   }
 }
 </style>

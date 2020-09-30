@@ -37,7 +37,7 @@
 
 <style scoped>
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .logo svg {
     height: 32px;
     width: 113.4px;

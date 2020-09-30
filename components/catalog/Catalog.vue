@@ -6,11 +6,9 @@
       </div>
       <AddItem />
     </div>
-    <div v-if="itemsToShow">
-      <div class="catalog-items">
-        <div v-for="item in itemsToShow" :key="item.id" class="catalog-item">
-          <CatalogItem :item="item" />
-        </div>
+    <div v-if="itemsToShow" class="catalog-items">
+      <div v-for="item in itemsToShow" :key="item.id" class="catalog-item">
+        <CatalogItem :item="item" />
       </div>
     </div>
     <div v-else>
@@ -28,15 +26,17 @@
 .catalog-header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 .catalog-items {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -32px;
+  margin: 0 -16px;
 }
 .catalog-item {
-  flex-basis: calc(33.333% - 64px);
-  margin: 32px;
+  flex-basis: 33.333%;
+  padding: 16px;
+  width: 33.333%;
 }
 .catalog-filter {
   display: flex;
@@ -48,7 +48,7 @@
   font-size: 40px;
   line-height: 120%;
   color: #012345;
-  margin-right: 15px;
+  margin-right: 11px;
 }
 
 .night .catalog {
@@ -57,7 +57,14 @@
 .night .catalog-filter span {
   color: #FCFCFC
 }
-@media (max-width: 375px) {
+@media (max-width: 1130px) {
+  .catalog-item {
+    flex-basis: 50%;
+    padding: 16px;
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
   .catalog {
     border-radius: 24px;
     padding: 24px 16px;

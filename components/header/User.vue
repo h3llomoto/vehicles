@@ -30,7 +30,7 @@
 .night .user__name {
   color: #FCFCFC;
 }
-@media (max-width: 375px) {
+@media (max-width: 1200px) {
   .user__name {
     display: none;
   }

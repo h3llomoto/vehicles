@@ -32,6 +32,7 @@
 .filter__current svg {
   position: relative;
   bottom: 6px;
+  right: -6px;
 }
 .filter__dropdown {
   position: absolute;
@@ -57,7 +58,7 @@
   display: block;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .filter__current {
     font-size: 24px;
   }

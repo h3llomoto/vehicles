@@ -30,7 +30,7 @@
               A challenge for a true champion
             </div>
             <div class="tab__description">
-              {{ item.description }}
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@
               Pilot's sweaty hands
             </div>
             <div class="tab__description">
-              {{ item.description }}
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@
           </div>
           <div class="tab__card">
             <div class="tab__img">
-              <img src="~static/images/team02.png">
+              <img src="~static/images/team03.png">
             </div>
             <div class="tab__card__info">
               <div class="tab__heading--small">
@@ -86,7 +86,7 @@
           </div>
           <div class="tab__card">
             <div class="tab__img">
-              <img src="~static/images/team03.png">
+              <img src="~static/images/team02.png">
             </div>
             <div class="tab__card__info">
               <div class="tab__heading--small">
@@ -103,10 +103,10 @@
         </div>
       </div>
       <div class="tab terms">
-        <div class="tab__description mb-32">
+        <div class="tab__description mb-16">
           {{ item.description }}
         </div>
-        <div class="tab__description mb-32">
+        <div class="tab__description mb-24">
           {{ item.term_text }}
         </div>
         <div class="tab__heading--small mb-24">
@@ -164,6 +164,7 @@
   font-size: 12px;
   line-height: 148%;
   color: #677B8F;
+  margin-top: -4px;
 }
 .tab__description {
   font-weight: 300;
@@ -185,26 +186,29 @@
   justify-content: center;
   align-items: center;
   margin-right: 24px;
+  flex-shrink: 0;
 }
 .tab__cards {
   display: flex;
   justify-content: space-between;
+  margin: 0 -12.5px;
 }
 .tab__card {
-  max-width: 162px;
+  padding: 0 12.5px;
 }
 .tab__img {
   border-radius: 16px;
   overflow: hidden;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 }
 .tab__img img {
   display: block;
+  width: 100%;
 }
 .tab__list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 17px;
 }
 .tab__list li {
   padding-left: 24px;
@@ -231,6 +235,9 @@
 .mb-24 {
   margin-bottom: 24px;
 }
+.mb-16 {
+  margin-bottom: 16px;
+}
 .night .tabs-menu__item:not(.active),
 .night .tab__subheading,
 .night .tab__description,
@@ -247,22 +254,7 @@
 .night .tab__item__icon svg path {
   fill: #99A7B5;
 }
-@media (max-width: 375px) {
-  .mb-32, .mb-24 {
-    margin-bottom: 16px;
-  }
-  .tab__item .tab__heading--small {
-    margin-bottom: 4px;
-  }
-  .tab__item__icon {
-    margin-right: 16px;
-    width: 64px;
-    height: 80px;
-  }
-  .tab__item__icon svg {
-    width: 24px;
-    height: 24px;
-  }
+@media (max-width: 1200px) {
   .tab__cards {
     flex-direction: column;
   }
@@ -280,6 +272,23 @@
   .tab__img img {
     width: 132px;
     height: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .mb-32, .mb-24 {
+    margin-bottom: 16px;
+  }
+  .tab__item .tab__heading--small {
+    margin-bottom: 4px;
+  }
+  .tab__item__icon {
+    margin-right: 16px;
+    width: 64px;
+    height: 80px;
+  }
+  .tab__item__icon svg {
+    width: 24px;
+    height: 24px;
   }
   .tab__card__info {
     flex: 1;

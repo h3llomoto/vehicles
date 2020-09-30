@@ -211,7 +211,7 @@
   background-color: #011C37;
   color: #99A7B5;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .mb-40 {
     margin-bottom: 24px;
   }

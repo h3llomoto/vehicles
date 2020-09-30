@@ -92,7 +92,12 @@
 .night .product-rent__price {
   color: #FCFCFC;
 }
-@media (max-width: 375px) {
+@media (max-width: 1200px) {
+  .product-image {
+    width: 40%;
+  }
+}
+@media (max-width: 900px) {
   .product {
     display: block;
     padding: 16px;
@@ -116,14 +121,14 @@
     padding: 12px 24px;
     position: fixed;
     bottom: 32px;
-    width: calc(100% - 32px);
+    width: calc(100% - 160px);
     z-index: 1;
   }
   .product-info::before {
     content: '';
-    width: calc(100% + 32px);
+    width: 100%;
     height: 132px;
-    left: -16px;
+    left: 0;
     bottom: 0;
     position: fixed;
     background: linear-gradient(180deg, rgba(1, 35, 69, 0) 0%, #fcfcfc 32px);
@@ -138,6 +143,15 @@
   }
   .night .product-info::before {
     background: linear-gradient(180deg, rgba(1, 35, 69, 0) 0%, #012345 32px);
+  }
+}
+@media (max-width: 548px) {
+  .product-rent {
+    width: calc(100% - 32px);
+  }
+  .product-info::before {
+    width: calc(100% + 32px);
+    left: -16px;
   }
 }
 </style>

@@ -41,6 +41,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  letter-spacing: 0.01px;
 }
 
 *,
@@ -76,11 +77,11 @@ body {
   overflow: hidden;
 }
 .page {
-  max-width: 1430px;
+  max-width: 1440px;
   padding: 48px 64px;
   margin: 0 auto;
 }
-@media (max-width: 375px) {
+@media (max-width: 548px) {
   .page {
     padding: 12px 0 0;
   }
